@@ -25,8 +25,8 @@ class ShiftCipher {
     let lowerStr = str.toLowerCase();
     for (let i = 0; i < str.length; i++) {
       let code = lowerStr.charCodeAt(i);
-      if (code > 65 && code < 92) {
-        if (code - this.shift < 66) {
+      if (code > 96 && code < 123) {
+        if (code - this.shift < 97) {
           code += 26;
         }
         decrypted += (String.fromCharCode(code - this.shift));
@@ -41,4 +41,3 @@ class ShiftCipher {
 const cipher = new ShiftCipher(2);
 console.log(cipher.encrypt('Z love to code!')); // returns 'K NQXG VQ EQFG!'
 console.log(cipher.decrypt('K <3 OA RWRRA')); // returns 'i <3 my puppy'
-console.log('Z'.charCodeAt(0));
