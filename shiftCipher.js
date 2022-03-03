@@ -39,5 +39,5 @@ class ShiftCipher {
 }
 
 const cipher = new ShiftCipher(2);
-console.log(cipher.encrypt('Z love to code!')); // returns 'K NQXG VQ EQFG!'
+console.log(cipher.encrypt('I love to code!')); // returns 'K NQXG VQ EQFG!'
 console.log(cipher.decrypt('K <3 OA RWRRA')); // returns 'i <3 my puppy'
